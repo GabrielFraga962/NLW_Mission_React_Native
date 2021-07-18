@@ -5,6 +5,7 @@ import { ButtonAdd } from "../../components/ButtonAdd";
 import { ListHeader } from "../../components/ListHeader";
 import { Appointment } from "../../components/Appointment";
 import { Profile } from "../../components/Profile";
+import { ListDivider } from "../../components/ListDivider";
 import { styles } from "./styles";
 
 export function Home() {
@@ -13,6 +14,18 @@ export function Home() {
   const appointments = [
     {
       id: "1",
+      guild: {
+        id: "1",
+        name: "Lendários",
+        icon: null,
+        owner: true,
+      },
+      category: "1",
+      date: "22/06 às 20:40h",
+      description: "É hoje que vamos chagar ao challenger sem perder uma partida da md10",
+    },
+    {
+      id: "2",
       guild: {
         id: "1",
         name: "Lendários",
@@ -34,8 +47,7 @@ export function Home() {
         <Profile />
         <ButtonAdd />
       </View>
-
-      <View>
+ 
         <CategorySelect
           categorySelect={category}
           setCategory={handleCategorySelect}
@@ -47,11 +59,13 @@ export function Home() {
             data={appointments}
             keyExtractor={(item) => item.id}
             renderItem={({ item }) => (
-              <Appointment data={item}/>
+            <Appointment data={item} />
             )}
+            ItemSeparatorComponent={() => <ListDivider/>}
+            style={styles.matches}
+            showsVerticalScrollIndicator={false}
           />
         </View>
-      </View>
     </View>
   );
 }
