@@ -22,21 +22,21 @@ Aplicativo para lhe ajudar a conectar-se e organiza o momento de diversão e jog
 
 # Tecnologias 📱
 
- - React Native
- - Typescript
- - Expo
- - Context API
- - Async Storage
+ - [React Native](https://reactnative.dev/)
+ - [Typescript](https://www.typescriptlang.org/)
+ - [Expo](https://expo.io/)
+ - [Context API](https://pt-br.reactjs.org/docs/context.html)
+ - [Async Storage](https://reactnative.dev/docs/asyncstorage)
  - Vector Icons
- - React Native Svg e Svg Transform
- - Axios
+ - [React Native Svg e Svg Transform](https://github.com/kristerkari/react-native-svg-transformer)
+ - [Axios](https://www.npmjs.com/package/axios)
  - Gradient colors
  - OAuth2 Discord
- - Expo Google Fonts
- - React Navigation Stack
- - React Native Gesture Handler
- - Expo Authentication
- - React Native Share
+ - [Expo Google Fonts](https://docs.expo.io/guides/using-custom-fonts/#using-a-google-font)
+ - [React Navigation Stack](https://reactnavigation.org/docs/stack-navigator/)
+ - [React Native Gesture Handler](https://docs.swmansion.com/react-native-gesture-handler/docs/)
+ - [Expo Authentication](https://docs.expo.io/guides/authentication/)
+ - [React Native Share](https://github.com/react-native-share/react-native-share)
  - Deep Link
 
 # Execultando o projeto
@@ -63,4 +63,3 @@ O projeto foi desenhado no [figma](https://www.figma.com/). O layout do projeto 
 
 Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](https://opensource.org/licenses/MIT) para mais detalhes.
 
--
