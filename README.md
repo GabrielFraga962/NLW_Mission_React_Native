@@ -3,6 +3,10 @@
 - Projeto desenvolvido na missão React Native no NLW #06
  > Status do Projeto: Em desenvolvimento :warning:
 
+<p align="center"> <img src=https://i.imgur.com/7ZkPHNr.png> </p>
+
+#
+
 ![AppGames](https://i.imgur.com/loRN0Jk.png)
 
 # Projeto 💻
