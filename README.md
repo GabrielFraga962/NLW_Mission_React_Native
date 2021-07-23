@@ -35,7 +35,7 @@ Aplicativo para lhe ajudar a conectar-se e organiza o momento de diversão e jog
  - [React Native Svg e Svg Transform](https://github.com/kristerkari/react-native-svg-transformer)
  - [Axios](https://www.npmjs.com/package/axios)
  - Gradient colors
- - OAuth2 Discord
+ - [OAuth2 Discord](https://discord.com/developers/docs/topics/oauth2)
  - [Expo Google Fonts](https://docs.expo.io/guides/using-custom-fonts/#using-a-google-font)
  - [React Navigation Stack](https://reactnavigation.org/docs/stack-navigator/)
  - [React Native Gesture Handler](https://docs.swmansion.com/react-native-gesture-handler/docs/)
