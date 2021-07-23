@@ -2,6 +2,7 @@ import React from "react";
 import { View, Text } from "react-native";
 import { styles } from "./styles";
 import { Avatar } from "../Avatar";
+import { theme } from "../../global/styles/theme";
 
 export type MemberProps = {
   id: string;
@@ -15,7 +16,8 @@ type Props = {
 };
 
 export function Member({data}: Props) {
-    const isOnline = data.status === "Online";
+  const {on, primary} = theme.colors;
+  const isOnline = data.status === "Online";
 
   return (
     <View style={styles.container}>
@@ -25,7 +27,13 @@ export function Member({data}: Props) {
               {data.username}
           </Text>
           <View style={styles.status}>
-
+            <View 
+            style={[styles.bulletStatus,
+              {
+                backgroundColor: isOnline ? on : primary
+              }
+            ]}
+            />
               <Text style={styles.nameStatus}>
                   {isOnline ? "Disponivel" : "Ocupado"}
               </Text>

@@ -4,12 +4,13 @@ import { Fontisto } from "@expo/vector-icons";
 import { Background } from "../../components/Background";
 import { ListHeader } from "../../components/ListHeader";
 import { BorderlessButton } from "react-native-gesture-handler";
+import { ListDivider } from "../../components/ListDivider";
 import BannerImg from "../../assets/banner.png";
 import { Header } from "../../components/Header";
 import { theme } from "../../global/styles/theme";
 import { Member } from "../../components/Member";
+import { ButtonIcon } from "../../components/ButtonIcon";
 import { styles } from "./styles";
-import { ListDivider } from "../../components/ListDivider";
 
 export function AppointmentDetails() {
   const members = [
@@ -17,7 +18,7 @@ export function AppointmentDetails() {
       id: "1",
       username: "Davide",
       avatar_url: "https://github.com/Th3Wall.png",
-      status: 'online'
+      status: "online",
     },
   ];
 
@@ -40,13 +41,17 @@ export function AppointmentDetails() {
           </Text>
         </View>
       </ImageBackground>
-      <ListHeader title="Jogadores" subtitle="Total 3"/>
-      <FlatList data={members} keyExtractor={item => item.id} renderItem={({ item}) => (
-        <Member data={item} />
-      )}
-      ItemSeparatorComponent={() => <ListDivider/>}
-      style={styles.members}
+      <ListHeader title="Jogadores" subtitle="Total 3" />
+      <FlatList
+        data={members}
+        keyExtractor={(item) => item.id}
+        renderItem={({ item }) => <Member data={item} />}
+        ItemSeparatorComponent={() => <ListDivider />}
+        style={styles.members}
       />
+      <View style={styles.footer}>
+        <ButtonIcon title="Entrar na partida" />
+      </View>
     </Background>
   );
 }
