@@ -20,6 +20,12 @@ export function AppointmentDetails() {
       avatar_url: "https://github.com/Th3Wall.png",
       status: "online",
     },
+    {
+      id: "2",
+      username: "Raquel",
+      avatar_url: "https://github.com/RaquelBorges.png",
+      status: "online",
+    },
   ];
 
   return (
