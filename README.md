@@ -1,7 +1,7 @@
 # NWL_Mission_React_Native ⚛️
 
 - Projeto desenvolvido na missão React Native no NLW #06
- > Status do Projeto: Em desenvolvimento :warning:
+ > Status do Projeto: concluído :white_check_mark:
 
 <p align="center"> <img src=https://i.imgur.com/7ZkPHNr.png> </p>
 
